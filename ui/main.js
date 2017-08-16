@@ -1,9 +1,10 @@
 //console.log('Loaded!');
 //var counter=0;
-alert("in main.js");
-var button = document.getElementById('counter');
-button.onclick = function(){
+
+//var button = document.getElementById('counter');
+//button.onclick = function(){
    // counter = counter+1;
+  function buttonClicked(){
     alert("on click");
     
  var request = new XMLHttpRequest();
@@ -27,4 +28,4 @@ button.onclick = function(){
  request.open('GET','http://sharsmita.imad.hasura-app.io/counter',true);
  request.send(null);
  
-};
+}

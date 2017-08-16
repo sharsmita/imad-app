@@ -21,6 +21,7 @@ body {
 }
 .container{
     margin-left: 400px;
-    margin-top:400px;
+    margin-top:200px;
+    margin-right:200px;
     background-color:#00ffff;
 }

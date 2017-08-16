@@ -1,7 +1,8 @@
-console.log('Loaded!');
-
+//console.log('Loaded!');
+//var counter=0;
 var button = document.getElementById('counter');
 button.onClick = function(){
+   // counter = counter+1;
     alert("on click");
     
  var request = new XMLHttpRequest();

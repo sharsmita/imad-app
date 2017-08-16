@@ -2,14 +2,18 @@ console.log('Loaded!');
 
 var button = document.getElementById('counter');
 button.onClick = function(){
+    alert("on click");
+    
  var request = new XMLHttpRequest();
  
  request.onreadystatechange = function(){
-     
+     alert("on ready state change");
      if(request.readyState === XMLHttpRequest.DONE)
      {
+         alert("on ready state");
          if(request.status === 200)
          {
+             //alert("on click");
              var counter = request.responseText;
              var span = document.getElementById('count');
              alert(counter.toString());

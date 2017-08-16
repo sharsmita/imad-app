@@ -9,22 +9,22 @@
          
          <script>
              
-                             function buttonClicked(){
-                    alert("on click");
-                    
+               // function buttonClicked(){
+                   // alert("on click");
+                button.onClick = function(){  
                  var request = new XMLHttpRequest();
                  
                  request.onreadystatechange = function(){
-                     alert("on ready state change");
+                     //alert("on ready state change");
                      if(request.readyState === XMLHttpRequest.DONE)
                      {
-                         alert("on ready state");
+                        // alert("on ready state");
                          if(request.status === 200)
                          {
                              //alert("on click");
                              var counter = request.responseText;
                              var span = document.getElementById('count');
-                             alert(span.innerHTML);
+                             //alert(span.innerHTML);
                              span.innerHTML = counter.toString();
                          }
                      }
@@ -56,7 +56,7 @@
             
             <hr/>
             <div class="footer">
-                This button <button id="counter" onclick=javascript:buttonClicked() >"click Me!"</button> has been clicked <span id="count">0</span> times.
+                This button <button id="counter" >"click Me!"</button> has been clicked <span id="count">0</span> times.
                 
             </div>
         </div>

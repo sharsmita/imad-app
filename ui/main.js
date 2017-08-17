@@ -11,7 +11,7 @@ button.onclick = function(){
  var request = new XMLHttpRequest();
  
  request.onreadystatechange = function(){
-     alert("on ready state change");
+     //alert("on ready state change");
      if(request.readyState === XMLHttpRequest.DONE)
      {
          //alert("on ready state");
@@ -21,7 +21,7 @@ button.onclick = function(){
              var counter = request.responseText;
              var span = document.getElementById('count');
              alert(counter.toString());
-             span.innerHtml = counter.toString();
+             span.innerHTML = counter.toString();
          }
      }
  };

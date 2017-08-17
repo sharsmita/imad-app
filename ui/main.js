@@ -2,7 +2,7 @@ console.log('Loaded!');
 //var counter=0;
 
 var button = document.getElementById('counter');
-button.onclick = function(){
+button.onClick = function(){
    // counter = counter+1;
   //function buttonClicked(){
     //alert("on click");
@@ -19,7 +19,7 @@ button.onclick = function(){
              //alert("on click");
              var counter = request.responseText;
              var span = document.getElementById('count');
-             alert(counter.toString());
+             alert(span.innerHTML);
              span.innerHtml = counter.toString();
          }
      }

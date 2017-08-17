@@ -3,7 +3,7 @@ console.log('Loaded!');
 
 var button = document.getElementById('counter');
 
-button.onClick = function(){
+button.onclick = function(){
    // counter = counter+1;
   //function buttonClicked(){
     alert("on click");

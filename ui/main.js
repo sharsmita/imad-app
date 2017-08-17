@@ -1,11 +1,11 @@
 console.log('Loaded!');
 //var counter=0;
 
-//var button = document.getElementById('counter');
-//button.onclick = function(){
+var button = document.getElementById('counter');
+button.onclick = function(){
    // counter = counter+1;
-  function buttonClicked(){
-    alert("on click");
+  //function buttonClicked(){
+    //alert("on click");
     
  var request = new XMLHttpRequest();
  
@@ -13,7 +13,7 @@ console.log('Loaded!');
      alert("on ready state change");
      if(request.readyState === XMLHttpRequest.DONE)
      {
-         alert("on ready state");
+         //alert("on ready state");
          if(request.status === 200)
          {
              //alert("on click");

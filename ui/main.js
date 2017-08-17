@@ -20,7 +20,7 @@ button.onclick = function(){
              //alert("on click");
              var counter = request.responseText;
              var span = document.getElementById('count');
-             alert(span.innerHTML);
+             alert(counter.toString());
              span.innerHtml = counter.toString();
          }
      }
